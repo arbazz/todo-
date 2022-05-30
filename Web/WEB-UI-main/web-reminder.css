@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.sideBar {
+  padding-top: 30px;
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  /* border: 1px solid; */
+}
+.taskBox {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  background-color: black;
+  color: white;
+  border-radius: 0 100px 100px 0;
+  padding: 10px;
+  padding-left: 10px;
+}
+.taskBox img {
+  margin: 0 15px;
+}
+.locationBox {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  border-radius: 0 100px 100px 0;
+  padding: 10px;
+  padding-left: 0px;
+}
+.locationBox img {
+  padding-left: 10px;
+  margin: 0 15px;
+}
+.logout {
+  height: 68vh;
+  display: flex;
+  align-items: flex-end;
+  /* margin-bottom: 30px; */
+}
+
+.logoutBox {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.logoutBox img {
+  margin: 0 10px;
+}
+
+.addBox {
+  margin-left: 20%;
+  padding: 40px 0 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.taskbox {
+  /* display: flex; */
+
+  /* justify-content: space-between; */
+}
+.addTask {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid; */
+}
+.addTask button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+}
+.addTask p {
+  margin: 0 5px;
+  font-weight: bolder;
+  color: #575767;
+}
+
+.incomplete {
+  /* border: 1px solid; */
+  /* margin-top: 25px; */
+  margin: 25px 0 15px;
+  font-weight: bolder;
+  color: #575767;
+}
+.dailyTask {
+  /* border: 1px solid; */
+  display: flex;
+  align-items: flex-start;
+}
+.dailyTask input {
+  /* padding: 50px; */
+  width: 30px;
+  margin-right: 5px;
+}
+.dailyTask p {
+  /* border: 1px solid red; */
+  position: relative;
+  color: #575767;
+}
+.dailyTask p span {
+  /* border: 1px solid; */
+  position: absolute;
+  margin-bottom: 10px;
+  top: 10px;
+  color: #b9b9be;
+  font-weight: bolder;
+  font-size: 12px;
+}
+.dailyTask p span img {
+  position: relative;
+  bottom: -6px;
+}
+.answerBox {
+  display: flex;
+  align-items: baseline;
+  color: #b9b9be;
+
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.answerBox input {
+  margin-right: 10px;
+  border-color: #b9b9be;
+}
+.answerBox p {
+  margin-top: 10px;
+}
+.card {
+  /* border: 1px solid red; */
+  height: 100%;
+  margin-right: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cardBox {
+  width: 350px;
+  /* height: 200px; */
+  /* border: 1px solid;/ */
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+}
+.para1 {
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.para2 {
+  color: #b9b9be;
+  text-transform: capitalize;
+}
+.skipBtnBox {
+  text-align: end;
+  padding: 8px;
+  /* border: 1px solid; */
+  background-color: #f6f5f5;
+}
+.skipBtnBox button {
+  border: none;
+  background-color: transparent;
+  margin: 0 10px;
+  color: #575767;
+}
+@media only screen and (max-width: 800px) {
+  .sideBar {
+    width: 50px;
+  }
+  .taskBox div p,
+  .locationBox div p,
+  .logoutBox div p {
+    display: none;
+  }
+  .taskBox img,
+  .locationBox img,
+  .logoutBox img {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card{
+  margin-top: 50px;    
+  }
+  .cardBox{
+    width: 250px;
+    font-size: 10px;
+  }
+}

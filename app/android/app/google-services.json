@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "531433038700",
+    "project_id": "to-do-app-f7313",
+    "storage_bucket": "to-do-app-f7313.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531433038700:android:7008f5311f4aca39400949",
+        "android_client_info": {
+          "package_name": "com.crudapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531433038700-4bi54eckokcr9kr49gjeieuj2qv8gds7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDt16Xxar2jjy6rFkKSe97GBfWRsflY2c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531433038700-4bi54eckokcr9kr49gjeieuj2qv8gds7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.sideBar {
+  padding-top: 30px;
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  /* border: 1px solid; */
+}
+.taskBox {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  background-color: black;
+  color: white;
+  border-radius: 0 100px 100px 0;
+  padding: 10px;
+  padding-left: 10px;
+}
+.taskBox img {
+  margin: 0 15px;
+}
+.locationBox {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  border-radius: 0 100px 100px 0;
+  padding: 10px;
+  padding-left: 0px;
+}
+.locationBox img {
+  padding-left: 10px;
+  margin: 0 15px;
+}
+.logout {
+  height: 68vh;
+  display: flex;
+  align-items: flex-end;
+  /* margin-bottom: 30px; */
+}
+
+.logoutBox {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.logoutBox img {
+  margin: 0 10px;
+}
+
+.addBox {
+  margin-left: 20%;
+  padding: 40px 0 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.taskbox {
+  /* display: flex; */
+
+  /* justify-content: space-between; */
+}
+.addTask {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid; */
+}
+.addTask button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+}
+.addTask p {
+  margin: 0 5px;
+  font-weight: bolder;
+  color: #575767;
+}
+
+.incomplete {
+  /* border: 1px solid; */
+  /* margin-top: 25px; */
+  margin: 25px 0 15px;
+  font-weight: bolder;
+  color: #575767;
+}
+.dailyTask {
+  /* border: 1px solid; */
+  display: flex;
+  align-items: flex-start;
+}
+.dailyTask input {
+  /* padding: 50px; */
+  width: 30px;
+  margin-right: 5px;
+}
+.dailyTask p {
+  /* border: 1px solid red; */
+  position: relative;
+  color: #575767;
+}
+.dailyTask p span {
+  /* border: 1px solid; */
+  position: absolute;
+  margin-bottom: 10px;
+  top: 10px;
+  color: #b9b9be;
+  font-weight: bolder;
+  font-size: 12px;
+}
+.dailyTask p span img {
+  position: relative;
+  bottom: -6px;
+}
+.answerBox {
+  display: flex;
+  align-items: baseline;
+  color: #b9b9be;
+
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.answerBox input {
+  margin-right: 10px;
+  border-color: #b9b9be;
+}
+.answerBox p {
+  margin-top: 10px;
+}
+.card {
+  /* border: 1px solid red; */
+  height: 100%;
+  margin-right: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cardBox {
+  width: 350px;
+  /* height: 200px; */
+  /* border: 1px solid;/ */
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+}
+.para1 {
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.para2 {
+  color: #b9b9be;
+  text-transform: capitalize;
+}
+.skipBtnBox {
+  text-align: end;
+  padding: 8px;
+  /* border: 1px solid; */
+  background-color: #f6f5f5;
+}
+.skipBtnBox button {
+  border: none;
+  background-color: transparent;
+  margin: 0 10px;
+  color: #575767;
+}
+
+/* modal */
+@import url("https://fonts.googleapis.com/css?family=Quicksand:700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-main: #d75b4c;
+  --clr-dark: #333;
+  --clr-neutral: #ddd;
+  --clr-light: #fff;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem 2.5rem;
+  border-radius: 0.5rem;
+  /* border: 1px solid;/ */
+  width: 50%;
+  height: 400px;
+}
+.modalInpBox {
+  /* border: 1px solid; */
+  margin-top: 40px;
+}
+.modalInpBox section {
+  /* border: 1px solid yellow; */
+  margin: 20px 0;
+}
+.modalInpBox section input {
+  padding: 20px 0;
+  padding-left: 30px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid lightgray;
+}
+.btnBox {
+  /* border: 1px solid; */
+  text-align: center;
+  padding-bottom: 20px;
+}
+.cancelBtn {
+  border: none;
+  background-color: transparent;
+  margin: 0 10px;
+  padding: 10px;
+  width: 50%;
+}
+.saveBtn {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 18px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+.close-button {
+  float: right;
+  width: 1.5rem;
+  font-size: 1.2em;
+  line-height: 1;
+  padding: 0 0.2em 0.15em;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: var(--clr-neutral);
+  color: var(--clr-dark);
+  transition: color 0.12s ease-in-out;
+  display: none;
+}
+.modalInpBox {
+  position: relative;
+}
+.inpImg {
+  position: absolute;
+  left: 0%;
+  top: 15px;
+}
+.close-button:hover {
+  color: var(--clr-main);
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+/* modal */
+
+@media only screen and (max-width: 800px) {
+  .sideBar {
+    width: 50px;
+  }
+  .taskBox div p,
+  .locationBox div p,
+  .logoutBox div p {
+    display: none;
+  }
+  .taskBox img,
+  .locationBox img,
+  .logoutBox img {
+    margin: 0;
+  }
+  .modal-content{
+    width: 90%;
+  }
+}
